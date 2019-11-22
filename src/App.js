@@ -5,16 +5,16 @@ import elToroLoco from "./assets/images/towhisky.jpg";
 import tweettweet from "./assets/images/tweettweet.svg";
 import theSource from './assets/images/github.png'
 const App = () => {
-  const [isflipped, setFlipped] = useState(false);
+  const [isFlipped, setFlipped] = useState(false);
 
   const flipThatSucker = () => {
-    setFlipped(!isflipped);
+    setFlipped(!isFlipped);
   };
 
   const determineLink = () => {
     const link = document.getElementById("twitterFingers");
     const twitter = "https://twitter.com";
-    if (isflipped) {
+    if (isFlipped) {
       link.href = `${twitter}/stolinski`;
     } else {
       link.href = `${twitter}/wesbos`;
@@ -22,15 +22,15 @@ const App = () => {
   };
 
   return (
-    <div id="upsideDown" className={`App ${isflipped ? "onHead" : ""} `}>
-      <header className={`App-header `}>
-        <h1 style={{}}>Stand on your head</h1>
-        <p>Best Problem Solving Tool Out There</p>
+    <div id="upsideDown" className={`App ${isFlipped ? "onHead" : ""} `}>
+      <header className={`main `}>
+        <h1>Stand on your head</h1>
+        <p>The Best Problem Solving Tool Out There</p>
         <div className="faces">
           <img
-            src={isflipped ? elToroLoco : theBosMachine}
+            src={isFlipped ? elToroLoco : theBosMachine}
             alt="Either a person Wes Bos or of Scott Tolinski"
-          ></img>{" "}
+          ></img>
         </div>
 
         <div
@@ -46,14 +46,14 @@ const App = () => {
           </a>
         </div>
         <button
-          className={`flipper ${isflipped ? "onHead" : ""}`}
+          className={`flipper ${isFlipped ? "onHead" : ""}`}
           onClick={flipThatSucker}
         >
-          {isflipped ? "You flipped it. You proud?" : "Totally doesn't flip the face"}
+          {isFlipped ? "You flipped it. You proud?" : "Totally doesn't flip the face"}
         </button>
       </header>
       <footer>
-      <div><a href='https://www.github.com/christianarty'><img src={theSource} alt='Link to the source repo'></img></a></div>
+      <div><a href='https://www.github.com/christianarty/StandOnYourHead'><img src={theSource} alt='Link to the source repo'></img></a></div>
       by Christian Arty
       </footer>
     </div>

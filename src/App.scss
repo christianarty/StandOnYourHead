@@ -5,7 +5,7 @@
 }
 
 
-.App-header {
+.main{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -63,7 +63,6 @@
   }
   &:hover {
     animation: shake 0.5s;
-
     animation-iteration-count: infinite;
   }
 }
