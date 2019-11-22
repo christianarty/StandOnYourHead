@@ -4,8 +4,7 @@
   transition: transform 1s ease;
 }
 
-
-.main{
+.main {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,8 +16,8 @@
 }
 
 .twitter {
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
   margin: 1rem;
 
   transition: transform 0.2s ease-in-out;
@@ -29,6 +28,7 @@
 
 .flipper {
   display: inline-block;
+  font-size: 1.25rem;
   background-color: #4e9af1;
   padding: 0.3em 1.2em;
   margin: 0 0.1em 0.1em 0;
@@ -44,7 +44,6 @@
   transition: all 0.5s;
   &:hover {
     border-color: rgba(255, 255, 255, 1);
-    
   }
 }
 
@@ -67,15 +66,14 @@
     animation-iteration-count: infinite;
   }
 }
-h1{
-  text-shadow:-2px -2px 0 #3d7eff,1px -1px 0 #3d7eff;
-  margin-bottom:0;
-  padding-bottom:0;
+h1 {
+  text-shadow: -2px -2px 0 #3d7eff, 1px -1px 0 #3d7eff;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
-p{
-  margin-top:0;
+p {
+  margin-top: 0;
   font-weight: 300;
-
 }
 footer {
   display: flex;
@@ -87,10 +85,10 @@ footer {
   justify-content: center;
   background-color: rgb(202, 202, 202);
   height: 15vh;
-  font-size: 0.75rem;
+  font-size: 1rem;
   div {
-    width: 32px;
-    height: 32px;
+    width: 2.5rem;
+    height: 2.5rem;
     padding: 0.25rem;
   }
   img {
